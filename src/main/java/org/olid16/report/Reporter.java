@@ -43,14 +43,14 @@ public class Reporter {
 
     public void howManyDaysOlder(String aFullName, String anotherFullName) {
         try {
-            int daysOlder = personBy(aFullName).howManyDaysOlderThan(personBy(anotherFullName));
+            int daysOlder = seniorBy(aFullName).howManyDaysOlderThan(seniorBy(anotherFullName));
             target.write(String.format(DAYS_OLDER_MESSAGE, aFullName, daysOlder, anotherFullName));
         } catch (NoSuchElementException e) {
             target.write("Error in howManyDaysOlder");
         }
     }
 
-    private Senior personBy(String aFullName) {
+    private Senior seniorBy(String aFullName) {
         return seniors.getBy(new FullName(aFullName));
     }
 

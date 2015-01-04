@@ -20,14 +20,14 @@ public class Interns {
 
     public long countDistinctMentors() {
         return interns.stream()
-                .map(Intern::ownerId)
+                .map(Intern::mentorId)
                 .distinct()
                 .count();
     }
 
     public List<Intern> getBy(Senior senior) {
         return interns.stream()
-                .filter(pet -> pet.ownerId().equals(senior.id()))
+                .filter(intern -> intern.mentorId().equals(senior.id()))
                 .collect(toList());
     }
 }

@@ -107,10 +107,10 @@ public class ReporterShould {
     }
 
     private Seniors employeesWith(List<Integer> ages) {
-        List<Senior> people = ages.stream()
+        List<Senior> seniors = ages.stream()
                 .map(age -> anEmployeeOf(age))
                 .collect(toList());
-        return new Seniors(people);
+        return new Seniors(seniors);
     }
 
     private Senior anEmployeeOf(Integer age) {

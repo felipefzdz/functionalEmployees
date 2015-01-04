@@ -19,32 +19,32 @@ public class Seniors {
 
     public long countBy(Sex sex) {
         return seniors.stream()
-                .filter(person -> sex.equals(person.sex()))
+                .filter(senior -> sex.equals(senior.sex()))
                 .count();
     }
 
     public double averageAge() {
         return seniors.stream()
-                .mapToInt(person -> person.age().value())
+                .mapToInt(senior -> senior.age().value())
                 .average()
                 .orElse(0);
     }
 
     public Senior getBy(FullName fullName) {
         return seniors.stream()
-                .filter(person -> fullName.equals(person.fullName()))
+                .filter(senior -> fullName.equals(senior.fullName()))
                 .findFirst()
                 .get();
     }
 
-    public boolean existsBy(Id ownerId) {
+    public boolean existsBy(Id mentorId) {
         return seniors.stream()
-                .anyMatch(person -> ownerId.equals(person.id()));
+                .anyMatch(senior -> mentorId.equals(senior.id()));
     }
 
     public Senior getBy(FirstName firstName) {
         return seniors.stream()
-                .filter(person -> firstName.equals(person.firstName()))
+                .filter(senior -> firstName.equals(senior.firstName()))
                 .findFirst()
                 .get();
     }

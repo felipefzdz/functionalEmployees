@@ -15,13 +15,13 @@ public class CsvEntitiesFactory {
                 .collect(toList());
     }
 
-    private CsvEntity csvEntity(List<String> header, List<String> line) {
-        if (header.size() != line.size()){
+    private CsvEntity csvEntity(List<String> header, List<String> content) {
+        if (header.size() != content.size()){
             throw new ParsingException();
         }
 
         List<CsvEntity.Entry> entries = IntStream.range(0, header.size())
-                .mapToObj(i -> new CsvEntity.Entry(header.get(i), line.get(i)))
+                .mapToObj(i -> new CsvEntity.Entry(header.get(i), content.get(i)))
                 .collect(toList());
 
         return new CsvEntity(entries);

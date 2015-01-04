@@ -9,7 +9,7 @@ public class Intern {
     private final Sex sex;
     private final Age age;
     private final DateOfBirth dateOfBirth;
-    private final Id ownerId;
+    private final Id mentorId;
 
     public Intern(InternBuilder builder) {
         this.id = builder.id;
@@ -17,11 +17,11 @@ public class Intern {
         this.sex = builder.sex;
         this.age = builder.age;
         this.dateOfBirth = builder.dateOfBirth;
-        this.ownerId = builder.ownerId;
+        this.mentorId = builder.mentorId;
     }
 
-    public Id ownerId() {
-        return ownerId;
+    public Id mentorId() {
+        return mentorId;
     }
 
     public FirstName firstName() {
@@ -34,7 +34,7 @@ public class Intern {
         private Sex sex;
         private Age age;
         private DateOfBirth dateOfBirth;
-        private Id ownerId;
+        private Id mentorId;
 
         public InternBuilder withId(Id id) {
             this.id = id;
@@ -61,8 +61,8 @@ public class Intern {
             return this;
         }
 
-        public InternBuilder withMentorId(Id ownerId) {
-            this.ownerId = ownerId;
+        public InternBuilder withMentorId(Id mentorId) {
+            this.mentorId = mentorId;
             return this;
         }
 
