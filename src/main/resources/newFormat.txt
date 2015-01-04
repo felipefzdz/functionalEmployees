@@ -1,0 +1,12 @@
+Id, Senior/Intern, First Name, Surname, Sex, Age, D.O.B, Mentor
+17, Intern, Stuart, Hoax, male, 24, 04/06/1977, 91
+42, Senior, Bob, Real, male, 29, 15/04/1977,
+10, Intern, Angelina, Randall, female, 21, 30/01/1989, 66
+91, Senior, Peter, Tortellini, male, 29, 16/03/1977,
+93, Intern, Brad, Coarly, male, 24, 03/02/1987, 4
+45, Intern, Jessy, Peterson, female, 21, 31/03/1987, 35
+32, Senior, Mike, Fistro, male, 27, 22/09/1978,
+35, Senior, Jenny, Fertol, female, 24, 17/08/1981,
+4, Senior, Lucy, Pac, female, 26, 22/02/1980,
+66, Senior, Samantha, Ryan, female, 29, 15/04/1977,
+81, Intern, Cary, Phinder, male, 24, 04/06/1988, 91

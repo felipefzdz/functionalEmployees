@@ -1,0 +1,7 @@
+Full Name, Sex, Age, D.O.B
+Dave Mustaine, male, 30, 16/03/1984
+Rita Lee, female, 33, 17/09/1981
+James Hetfield, male, 29, 15/04/1985
+Carla Satriani, female, 35, 22/05/1979
+Melinda Petrucci, female, 34, 22/04/1980
+David Foster Wallace, male, 27, 17/04/1987
