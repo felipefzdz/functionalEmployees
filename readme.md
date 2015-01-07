@@ -1,4 +1,4 @@
-**EMPLOYEES SERVICE**
+# FUNCTIONAL EMPLOYEES
 
 This project showcases Java 8 functional capabilities for manipulating collections and parsing files. 
 
@@ -8,4 +8,4 @@ The data cames from text files living on the classpath. There are two data forma
 
 We could try to understand this app looking at its two main modules: parser and reporter. The parser takes some csv input and extracts domain objects using functional constructs and trying to be as general as possible. The reporter try to answer a couple of business questions about that data.
 
-If you want to read some explanations and thoughts about using Java 8 streams api to implement this app, let's have a look at this post.
+If you want to read some explanations and thoughts about using Java 8 streams api to implement this app, let's have a look at [this post](http://olid16.github.io/2015/01/04/brief-java-8-streams-tour-through-an-example/).
